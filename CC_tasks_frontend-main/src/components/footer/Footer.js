@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState,useEffect} from "react";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Footer.css";
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -6,8 +6,9 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const Footer = () => {
+   
     return (
-        <div className="footer" id="main">
+        <div className="footer" id="main" >
             <div className="row">
                 <h2 className="col" >Contact Us - 03222-281173</h2>
             </div>
@@ -74,6 +75,7 @@ const Footer = () => {
                     </table>
                 </div>
             </div>
+            <div class="scroll " ><i class="fas fa-arrow-circle-up scrollHide" id="scroll"></i></div>
         </div>
     
     );
